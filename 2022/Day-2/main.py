@@ -4,7 +4,7 @@
 # X for Rock, Y for Paper, and Z for Scissors
 # 1 for Rock, 2 for Paper, and 3 for Scissors
 # 0 lost, 3 draw, and 6 won
-def read_file(filename:str):
+def read_file(filename: str):
     '''
     :param filename:
     :return data:
@@ -19,19 +19,19 @@ def list_on_return(data):
     return data_list
 
 
-def make_2d_list(data:list):
+def make_2d_list(data: list):
     newlist = []
     for x in data:
         newlist.append([x,0])
     return newlist
 
 
-def wld_classify(data:list):
+def wld_classify(data: list):
     wld_list = []
     for x in data:
         if x[0] == 'C X' or x[0] == 'A Y' or x[0] == 'B Z':
             x[1] = 6
-        if x[0] == 'A Z'  or x[0] == 'B X' or x[0] == 'C Y':
+        if x[0] == 'A Z' or x[0] == 'B X' or x[0] == 'C Y':
             x[1] = 0
         if x[0] == 'A X' or x[0] == 'B Y' or x[0] == 'C Z':
             x[1] = 3
