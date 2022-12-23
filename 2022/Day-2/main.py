@@ -5,16 +5,27 @@
 # 1 for Rock, 2 for Paper, and 3 for Scissors
 # 0 lost, 3 draw, and 6 won
 def read_file(filename: str):
-    '''
-    :param filename:
-    :return data:
-    '''
+    """Reads filed into a string for future use.
+
+    Args:
+        filename (str): This is the filename to open.
+    Returns:
+        data (str): string that contains the data from the file.
+    """
     with open(filename, 'r') as f:
         data = f.read()
     return data
 
 
 def list_on_return(data):
+    """_summary_
+
+    Args:
+        data (str): String form of file data
+
+    Returns:
+        list: List formatted new element for each return
+    """
     data_list = data.split('\n')
     return data_list
 
