@@ -66,3 +66,6 @@ if __name__ == '__main__':
     sym_data = score_symbol(wld_data)
     total_score = add_scores(sym_data)
     print(total_score)
+
+
+
