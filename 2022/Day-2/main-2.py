@@ -4,6 +4,8 @@
 # X for Rock, Y for Paper, and Z for Scissors
 # 1 for Rock, 2 for Paper, and 3 for Scissors
 # 0 lost, 3 draw, and 6 won
+
+
 def read_file(filename : str):
     '''
     :param filename:
