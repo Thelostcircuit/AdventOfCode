@@ -1,30 +1,37 @@
-# A for Rock, B for Paper, and C for Scissors
-# You
-# X for Rock, Y for Paper, and Z for Scissors
-# 1 for Rock, 2 for Paper, and 3 for Scissors
-# 0 lost, 3 draw, and 6 won
-def read_file(filename: str):
-    """Reads filed into a string for future use.
+"""
+Discription:
+    Scores the input games based on rules
+Rules:
+    Part 1:
+        Opponent:
+            A for Rock
+            B for Paper
+            C for Scissors.
+        Self:
+            X for Rock
+            Y for Paper
+            Z for Scissors
+        Score:
+            WLD:
+                0 = lost 
+                3 = draw
+                6 = won
+            Symbol:
+                1 for Rock
+                2 for Paper
+                3 for Scissors
 
-    Args:
-        filename (str): This is the filename to open.
-    Returns:
-        data (str): string that contains the data from the file.
-    """
+   
+"""
+
+
+def read_file(filename: str):
     with open(filename, 'r') as f:
         data = f.read()
     return data
 
 
 def list_on_return(data):
-    """_summary_
-
-    Args:
-        data (str): String form of file data
-
-    Returns:
-        list: List formatted new element for each return
-    """
     data_list = data.split('\n')
     return data_list
 
@@ -67,6 +74,7 @@ def add_scores(data):
     for x in data:
         score_total = score_total + x[1]
     return score_total
+
 
 if __name__ == '__main__':
     input_data = read_file('input.txt')

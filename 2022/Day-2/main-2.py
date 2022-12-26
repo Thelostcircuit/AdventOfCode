@@ -11,6 +11,15 @@ Rules:
             X for Rock
             Y for Paper
             Z for Scissors
+        Score:
+            WLD:
+                0 = lost 
+                3 = draw
+                6 = won
+            Symbol:
+                1 for Rock
+                2 for Paper
+                3 for Scissors
     Part 2:
         Rules:
             X = lose
