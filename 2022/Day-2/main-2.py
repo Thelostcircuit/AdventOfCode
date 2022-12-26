@@ -1,5 +1,22 @@
-#Scores the input games based on rules
-
+"""
+Discription:
+    Scores the input games based on rules
+Rules:
+    Part 1:
+        Opponent:
+            A for Rock
+            B for Paper
+            C for Scissors.
+        Self:
+            X for Rock
+            Y for Paper
+            Z for Scissors
+    Part 2:
+        Rules:
+            X = lose
+            Y = draw
+            Z = win
+"""
 
 
 def read_file(filename: str):
@@ -23,12 +40,8 @@ def make_2d_list(data: list):
 
 def sym_chooser(data: list):
     for x in data:
-        pass
 
-
-
-
-
+    return 
 
 
 def wld_classify(data: list):
