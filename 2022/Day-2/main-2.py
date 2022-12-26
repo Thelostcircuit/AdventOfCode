@@ -1,16 +1,8 @@
-#oponant
-# A for Rock, B for Paper, and C for Scissors
-# You
-# X for Rock, Y for Paper, and Z for Scissors
-# 1 for Rock, 2 for Paper, and 3 for Scissors
-# 0 lost, 3 draw, and 6 won
+#Scores the input games based on rules
 
 
-def read_file(filename : str):
-    '''
-    :param filename:
-    :return data:
-    '''
+
+def read_file(filename: str):
     with open(filename, 'r') as f:
         data = f.read()
     return data
@@ -39,7 +31,7 @@ def sym_chooser(data:list):
 
 
 
-def wld_classify(data:list):
+def wld_classify(data: list):
     wld_list = []
     for x in data:
         if x[0] == 'C X' or x[0] == 'A Y' or x[0] == 'B Z':
