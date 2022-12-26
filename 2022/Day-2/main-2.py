@@ -21,7 +21,7 @@ def make_2d_list(data: list):
     return newlist
 
 
-def sym_chooser(data:list):
+def sym_chooser(data: list):
     for x in data:
         pass
 
@@ -44,7 +44,7 @@ def wld_classify(data: list):
     return wld_list
 
 
-def score_symbol(data:list):
+def score_symbol(data: list):
     score_data = []
     for x in data:
         if 'X' in x[0]:

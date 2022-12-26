@@ -1,4 +1,3 @@
-#oponant
 # A for Rock, B for Paper, and C for Scissors
 # You
 # X for Rock, Y for Paper, and Z for Scissors
@@ -50,7 +49,7 @@ def wld_classify(data: list):
     return wld_list
 
 
-def score_symbol(data:list):
+def score_symbol(data: list):
     score_data = []
     for x in data:
         if 'X' in x[0]:
@@ -77,6 +76,3 @@ if __name__ == '__main__':
     sym_data = score_symbol(wld_data)
     total_score = add_scores(sym_data)
     print(total_score)
-
-
-
